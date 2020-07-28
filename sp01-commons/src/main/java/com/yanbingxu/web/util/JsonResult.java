@@ -3,6 +3,10 @@ package com.yanbingxu.web.util;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * @author Yuanzhibx
+ * @Date 2020-07-28
+ */
 @Getter
 @Setter
 public class JsonResult<T> {

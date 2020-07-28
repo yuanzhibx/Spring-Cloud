@@ -4,6 +4,21 @@
 > - 文档在个人博客中编写, 欢迎访问 [blog.yanbingxu.com](http://blog.yanbingxu.com/)
 
 ---
+## 项目结构
+- [sp01-commons](./sp01-commons): 通用项目
+- [sp02-itemservice](./sp02-itemservice): 商品服务
+- [sp03-userservice](./sp03-userservice): 用户服务
+- [sp04-orderservice](./sp04-orderservice): 订单服务
+
+```
+├─SC
+│  ├─sp01-commons
+│  ├─sp02-itemservice
+│  ├─sp03-userservice
+│  └─sp04-orderservice
+```
+
+---
 ## 开发环境
 > - OS: **macOS 10.15.3 / CentOS 7**
 > - 语言: **JDK 1.8**
