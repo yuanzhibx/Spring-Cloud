@@ -24,6 +24,12 @@ public class ItemController {
     @Value("${server.port}")
     private int port;
 
+    /**
+     * 获取订单中的商品
+     *
+     * @param orderId 订单 id
+     * @return 商品集合
+     */
     @GetMapping("/{orderId}")
     public JsonResult<List<Item>> getItems(@PathVariable String orderId) {
         log.info("server.port=" + port + ", orderId=" + orderId);
@@ -31,10 +37,16 @@ public class ItemController {
         return JsonResult.ok(items).msg("port=" + port);
     }
 
+    /**
+     * 减少商品库存
+     *
+     * @param items 商品集合
+     * @return JsonResult
+     */
     @PostMapping("/decreaseNumber")
     public JsonResult decreaseNumber(@RequestBody List<Item> items) {
         itemService.decreaseNumbers(items);
-        return JsonResult.ok();
+        return JsonResult.ok().msg("减少商品库存成功");
     }
 
 }
