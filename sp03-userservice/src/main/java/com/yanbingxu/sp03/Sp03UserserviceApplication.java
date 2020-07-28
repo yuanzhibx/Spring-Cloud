@@ -1,4 +1,4 @@
-package com.yanbingxu.sp02;
+package com.yanbingxu.sp03;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2020-07-28
  */
 @SpringBootApplication
-public class Sp02ItemserviceApplication {
+public class Sp03UserserviceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Sp02ItemserviceApplication.class, args);
+        SpringApplication.run(Sp03UserserviceApplication.class, args);
     }
 
 }
