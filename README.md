@@ -9,16 +9,18 @@
 - [sp02-itemservice](./sp02-itemservice): 商品服务
 - [sp03-userservice](./sp03-userservice): 用户服务
 - [sp04-orderservice](./sp04-orderservice): 订单服务
+- [sp05-eureka](./sp05-eureka): Eureka 服务器
 
 ```
 ├─SC
 │  ├─sp01-commons
 │  ├─sp02-itemservice
 │  ├─sp03-userservice
-│  └─sp04-orderservice
+│  ├─sp04-orderservice
+│  └─sp05-eureka
 ```
 
-
+[20200330135542918.png](./img/20200330135542918.png)
 
 ---
 ## 开发环境
