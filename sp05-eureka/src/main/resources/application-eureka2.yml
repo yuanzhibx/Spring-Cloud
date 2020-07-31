@@ -1,0 +1,11 @@
+eureka:
+  instance:
+    # 主机名: eureka 集群中使用 hostname 区分多台服务器
+    hostname: eureka2
+  client:
+    # 是否注册, 单台选择关闭 (集群中多台服务器需要相互注册, 开启)
+    register-with-eureka: true
+    # 是否拉取, 单台选择关闭 (集群中多台服务器需要相互拉取, 开启)
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka1:2001/eureka
