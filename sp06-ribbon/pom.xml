@@ -27,6 +27,13 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <exclusions>
+                <!-- 排除 jackson.dataformat -->
+                <exclusion>
+                    <artifactId>jackson-dataformat-xml</artifactId>
+                    <groupId>com.fasterxml.jackson.dataformat</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>

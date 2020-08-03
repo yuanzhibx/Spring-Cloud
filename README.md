@@ -6,10 +6,11 @@
 ---
 ## 项目结构
 - [sp01-commons](./sp01-commons): 通用项目
-- [sp02-itemservice](./sp02-itemservice): 商品服务
-- [sp03-userservice](./sp03-userservice): 用户服务
-- [sp04-orderservice](./sp04-orderservice): 订单服务
+- [sp02-itemservice](./sp02-itemservice): 商品服务 (提供者)
+- [sp03-userservice](./sp03-userservice): 用户服务 (提供者)
+- [sp04-orderservice](./sp04-orderservice): 订单服务 (提供者)
 - [sp05-eureka](./sp05-eureka): Eureka 服务器
+- [sp06-ribbon](./sp06-ribbon): 远程调用 (调用者)
 
 ```
 ├─SC
@@ -17,7 +18,8 @@
 │  ├─sp02-itemservice
 │  ├─sp03-userservice
 │  ├─sp04-orderservice
-│  └─sp05-eureka
+│  ├─sp05-eureka
+│  └─sp06-ribbon
 ```
 
 ![20200330135542918.png](./img/20200330135542918.png)
