@@ -24,13 +24,14 @@ public class RibbonController {
     /**
      * 商品服务
      * 根据订单 id, 获取订单的商品列表
+     * 从 eureka 可得到 "item-service" 对应的主机地址列表: localhost:8001, localhost:8002
      *
      * @param orderId 订单 id
      * @return
      */
     @GetMapping("/item-service/{orderId}")
     public JsonResult<List<Item>> getItems(@PathVariable String orderId) {
-        return restTemplate.getForObject("http://localhost:8001/{1}", JsonResult.class, orderId);
+        return restTemplate.getForObject("http://item-service/{1}", JsonResult.class, orderId);
     }
 
     /**
@@ -42,7 +43,7 @@ public class RibbonController {
      */
     @PostMapping("/item-service/decreaseNumber")
     public JsonResult<?> decreaseNumber(@RequestBody List<Item> items) {
-        return restTemplate.postForObject("http://localhost:8001/decreaseNumber", items, JsonResult.class);
+        return restTemplate.postForObject("http://item-service/decreaseNumber", items, JsonResult.class);
     }
 
     /**
@@ -54,7 +55,7 @@ public class RibbonController {
      */
     @GetMapping("/user-service/{userId}")
     public JsonResult<User> getUser(@PathVariable Integer userId) {
-        return restTemplate.getForObject("http://localhost:8101/{1}", JsonResult.class, userId);
+        return restTemplate.getForObject("http://user-service/{1}", JsonResult.class, userId);
     }
 
     /**
@@ -67,7 +68,7 @@ public class RibbonController {
      */
     @GetMapping("/user-service/{userId}/score")
     public JsonResult<?> addScore(@PathVariable Integer userId, Integer score) {
-        return restTemplate.getForObject("http://localhost:8101/{1}/score?score={2}", JsonResult.class, userId, score);
+        return restTemplate.getForObject("http://user-service/{1}/score?score={2}", JsonResult.class, userId, score);
     }
 
     /**
@@ -79,7 +80,7 @@ public class RibbonController {
      */
     @GetMapping("/order-service/{orderId}")
     public JsonResult<Order> getOrder(@PathVariable String orderId) {
-        return restTemplate.getForObject("http://localhost:8201/{1}", JsonResult.class, orderId);
+        return restTemplate.getForObject("http://order-service/{1}", JsonResult.class, orderId);
     }
 
     /**
@@ -90,7 +91,7 @@ public class RibbonController {
      */
     @GetMapping("/order-service/")
     public JsonResult<?> addOrder() {
-        return restTemplate.getForObject("http://localhost:8201/", JsonResult.class);
+        return restTemplate.getForObject("http://order-service/", JsonResult.class);
     }
 
 }
