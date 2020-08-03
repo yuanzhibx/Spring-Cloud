@@ -15,3 +15,11 @@ ribbon:
   MaxAutoRetries: 1
   # 更换服务器重试次数
   MaxAutoRetriesNextServer: 2
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutImMilliseconds: 1000
