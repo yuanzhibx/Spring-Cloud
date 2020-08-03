@@ -157,6 +157,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.2.8.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.2.8.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.7.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.retry:spring-retry:1.2.5.RELEASE" level="project" />
     <orderEntry type="module" module-name="sp01-commons" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.11.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.1" level="project" />

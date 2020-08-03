@@ -10,3 +10,8 @@ eureka:
     service-url:
       defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
 
+ribbon:
+  # 单台服务器重试次数
+  MaxAutoRetries: 1
+  # 更换服务器重试次数
+  MaxAutoRetriesNextServer: 2
