@@ -6,6 +6,8 @@
 ---
 ## 项目结构
 
+### SpringCloud
+
 - [sp01-commons](./sp01-commons): 通用项目
 - [sp02-itemservice](./sp02-itemservice): 商品服务 (提供者)
 - [sp03-userservice](./sp03-userservice): 用户服务 (提供者)
@@ -14,6 +16,10 @@
 - [sp06-ribbon](./sp06-ribbon): Ribbon(负载均衡 重试) Hystrix(降级 熔断) (调用者)
 - [sp08-hystrix-dashboard](./sp08-hystrix-dashboard): Hystrix dashboard (监控工具)
 - [sp09-feign](./sp09-feign): Feign(负载均衡 重试) Hystrix(降级 熔断) (调用者)
+
+### RabbitMQ
+
+- [rabbitmq](./rabbitmq): RabbitMQ 消息中间件
 
 ```
 ├─SC
@@ -27,6 +33,8 @@
 │  │  └─Hystrix (降级 熔断)
 │  ├─sp08-hystrix-dashboard
 │  └─sp09-feign
+├─RabbitMQ
+│  ├─rabbitmq
 ```
 
 ![20200330135542918.png](./img/20200330135542918.png)
