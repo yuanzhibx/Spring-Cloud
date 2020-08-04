@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @author Yuanzhibx
  * @Date 2020-08-04
  */
-@FeignClient(name = "order-service")
+@FeignClient(name = "order-service", fallback = OrderFeignClientFB.class)
 public interface OrderFeignClient {
 
     /**

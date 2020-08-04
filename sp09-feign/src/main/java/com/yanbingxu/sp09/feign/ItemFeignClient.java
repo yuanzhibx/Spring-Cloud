@@ -14,7 +14,7 @@ import java.util.List;
  * @author Yuanzhibx
  * @Date 2020-08-04
  */
-@FeignClient(name = "item-service")
+@FeignClient(name = "item-service", fallback = ItemFeignClientFB.class)
 public interface ItemFeignClient {
 
     /**

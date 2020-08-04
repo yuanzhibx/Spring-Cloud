@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author Yuanzhibx
  * @Date 2020-08-04
  */
-@FeignClient(name = "user-service")
+@FeignClient(name = "user-service", fallback = UserFeignClientFB.class)
 public interface UserFeignClient {
 
     /**
