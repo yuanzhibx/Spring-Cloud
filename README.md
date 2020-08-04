@@ -10,7 +10,7 @@
 - [sp03-userservice](./sp03-userservice): 用户服务 (提供者)
 - [sp04-orderservice](./sp04-orderservice): 订单服务 (提供者)
 - [sp05-eureka](./sp05-eureka): Eureka 服务器
-- [sp06-ribbon](./sp06-ribbon): 远程调用 (调用者)
+- [sp06-ribbon](./sp06-ribbon): Ribbon X Hystrix (调用者)
 
 ```
 ├─SC
