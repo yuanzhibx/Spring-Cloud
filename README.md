@@ -11,6 +11,7 @@
 - [sp04-orderservice](./sp04-orderservice): 订单服务 (提供者)
 - [sp05-eureka](./sp05-eureka): Eureka 服务器
 - [sp06-ribbon](./sp06-ribbon): Ribbon(负载均衡 重试) Hystrix(降级 熔断) (调用者)
+- [sp08-hystrix-dashboard](./sp08-hystrix-dashboard): Hystrix dashboard (监控工具)
 
 ```
 ├─SC
@@ -19,10 +20,19 @@
 │  ├─sp03-userservice
 │  ├─sp04-orderservice
 │  ├─sp05-eureka
-│  └─sp06-ribbon
+│  ├─sp06-ribbon
+│  │  ├─Ribbon (负载均衡 重试)
+│  │  └─Hystrix (降级 熔断)
+│  └─sp08-hystrix-dashboard
+
 ```
 
 ![20200330135542918.png](./img/20200330135542918.png)
+
+---
+## 内容
+
+![SpringCloud.png](./img/SpringCloud.png)
 
 ---
 ## 开发环境
