@@ -34,7 +34,9 @@
 │  ├─sp08-hystrix-dashboard
 │  └─sp09-feign
 ├─RabbitMQ
-│  ├─rabbitmq
+│  └─rabbitmq
+│  │  ├─m1_simple (简单模式)
+│  │  └─m2_work (工作模式)
 ```
 
 ![20200330135542918.png](./img/20200330135542918.png)
@@ -59,6 +61,7 @@
 ### sp08-hystrix-dashboard
 
 - hystrix dashboard 断路器仪表盘
+
 ![20191029165134588.png](./img/20191029165134588.png)
 
 ### sp09-feign
