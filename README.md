@@ -17,6 +17,7 @@
 - [sp08-hystrix-dashboard](./sp08-hystrix-dashboard): Hystrix dashboard (监控工具)
 - [sp09-feign](./sp09-feign): Feign(集成Ribbon 集成 Hystrix)
 - [sp10-turbine](./sp10-turbine): Turbine 集群聚合监控
+- [sp11-zuul](./sp11-zuul): Zuul API 网关
 
 ### RabbitMQ
 
@@ -34,7 +35,8 @@
 │  │  └─Hystrix (降级 熔断)
 │  ├─sp08-hystrix-dashboard
 │  ├─sp09-feign
-│  └─sp10-turbine
+│  ├─sp10-turbine
+│  └─sp11-zuul
 ├─RabbitMQ
 │  └─rabbitmq
 │  │  ├─m1_simple (简单模式)
@@ -73,6 +75,10 @@
 ### sp10-turbine
 
 ![20191207225705406.png](./img/20191207225705406.png)
+
+### sp11-zuul
+
+![20191030151939810.png](./img/20191030151939810.png)
 
 ---
 ## 开发环境
