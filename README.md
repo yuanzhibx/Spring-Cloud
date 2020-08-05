@@ -22,7 +22,7 @@
 - [rabbitmq](./rabbitmq): RabbitMQ 消息中间件
 
 ```
-├─SC
+├─SpringCloud
 │  ├─sp01-commons
 │  ├─sp02-itemservice
 │  ├─sp03-userservice
