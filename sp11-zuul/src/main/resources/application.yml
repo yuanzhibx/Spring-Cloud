@@ -20,3 +20,13 @@ zuul:
 
 ribbon:
   ReadTimeout: 1000
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 2
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
