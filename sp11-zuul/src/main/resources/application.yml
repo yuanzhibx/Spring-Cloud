@@ -18,11 +18,13 @@ zuul:
     order-service: /order-service/**
   retryable: true
 
+# Ribbon
 ribbon:
   ReadTimeout: 1000
   MaxAutoRetries: 1
   MaxAutoRetriesNextServer: 2
 
+# Hystrix
 hystrix:
   command:
     default:
@@ -30,3 +32,10 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 1000
+
+# 暴露 hystrix.stream 监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
