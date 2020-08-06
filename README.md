@@ -13,7 +13,7 @@
 - [sp03-userservice](./sp03-userservice): 用户服务 (提供者)
 - [sp04-orderservice](./sp04-orderservice): 订单服务 (提供者)
 - [sp05-eureka](./sp05-eureka): Eureka 服务器
-- [sp06-ribbon](./sp06-ribbon): Ribbon(负载均衡 重试) Hystrix(降级 熔断) (调用者)
+- [sp06-ribbon](./sp06-ribbon): Ribbon(负载均衡 重试) Hystrix 断路器(降级 熔断) (调用者)
 - [sp08-hystrix-dashboard](./sp08-hystrix-dashboard): Hystrix dashboard (监控工具)
 - [sp09-feign](./sp09-feign): Feign(集成Ribbon 集成 Hystrix)
 - [sp10-turbine](./sp10-turbine): Turbine 集群聚合监控
@@ -40,7 +40,8 @@
 ├─RabbitMQ
 │  └─rabbitmq
 │  │  ├─m1_simple (简单模式)
-│  │  └─m2_work (工作模式)
+│  │  ├─m2_work (工作模式)
+│  │  └─m3_publishsubscribe (发布订阅模式)
 ```
 
 ![20200330135542918.png](./img/20200330135542918.png)
