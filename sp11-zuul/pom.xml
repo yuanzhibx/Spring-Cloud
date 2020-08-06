@@ -47,6 +47,11 @@
             </exclusions>
         </dependency>
         <dependency>
+            <groupId>org.springframework.retry</groupId>
+            <artifactId>spring-retry</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.yanbingxu</groupId>
             <artifactId>sp01-commons</artifactId>
             <version>1.0-SNAPSHOT</version>

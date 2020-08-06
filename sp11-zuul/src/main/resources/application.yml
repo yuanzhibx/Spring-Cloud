@@ -10,8 +10,13 @@ eureka:
     service-url:
       defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
 
+# 默认规则 (根据 eureka 注册中心的注册信息, 进行自动配置)
 zuul:
   routes:
     item-service: /item-service/**
     user-service: /user-service/**
     order-service: /order-service/**
+  retryable: true
+
+ribbon:
+  ReadTimeout: 1000
