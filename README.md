@@ -18,6 +18,7 @@
 - [sp09-feign](./sp09-feign): Feign(集成Ribbon 集成 Hystrix)
 - [sp10-turbine](./sp10-turbine): Turbine 集群聚合监控
 - [sp11-zuul](./sp11-zuul): Zuul API 网关
+- [sp12-config](./sp12-config): config 配置中心
 
 ### RabbitMQ
 
@@ -25,6 +26,7 @@
 
 ```
 ├─SpringCloud
+│  ├─config
 │  ├─sp01-commons
 │  ├─sp02-itemservice
 │  ├─sp03-userservice
@@ -36,7 +38,8 @@
 │  ├─sp08-hystrix-dashboard
 │  ├─sp09-feign
 │  ├─sp10-turbine
-│  └─sp11-zuul
+│  ├─sp11-zuul
+│  └─sp12-config
 ├─RabbitMQ
 │  └─rabbitmq
 │  │  ├─m1_simple (简单模式)
@@ -85,6 +88,10 @@
 ### sp11-zuul
 
 ![20191030151939810.png](./img/20191030151939810.png)
+
+### sp12-config
+
+![20191030152100641.png](./img/20191030152100641.png)
 
 ---
 ## 开发环境
