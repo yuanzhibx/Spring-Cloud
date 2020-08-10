@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    inetutils:
+      ignored-interfaces: # 忽略的网卡
+        - VM.*
+      preferred-networks: # 要使用的网卡的网段
+        - 172\.18\.55\..+
