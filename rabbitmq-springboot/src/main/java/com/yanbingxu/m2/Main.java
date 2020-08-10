@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 /**
+ * 工作模式
+ *
  * @author yanbingxu
  * @Date 2020-08-10
  */
