@@ -4,6 +4,8 @@ import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.Scanner;
+
 /**
  * @author Yuanzhibx
  * @Date 2020-08-10
@@ -12,15 +14,15 @@ import org.springframework.stereotype.Component;
 public class Producer {
 
     @Autowired
-    private AmqpTemplate amqpTemplate;
+    private AmqpTemplate t;
 
     public void send() {
-        for (int i = 0; i < 10; i++) {
-            String msg = "消息 " + i;
-            if (i >= 8) {
-                msg += "..................";
-            }
-            amqpTemplate.convertAndSend("task_queue", msg);
+        while (true) {
+            System.out.print("输入:");
+            String s = new Scanner(System.in).nextLine();
+
+            //spring 默认将消息的 DeliveryMode 设置为 PERSISTENT 持久化,
+            t.convertAndSend("task_queue", s);
         }
     }
 
