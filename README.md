@@ -1,4 +1,5 @@
 # Spring-Cloud
+
 > - About: [源志bx](http://blog.yanbingxu.com/)
 > - 该项目为学习 Spring-Cloud 微服务所用, 如有错误欢迎指正
 > - 文档在个人博客中编写, 欢迎访问 [blog.yanbingxu.com](http://blog.yanbingxu.com/)
@@ -41,13 +42,13 @@
 │  ├─sp11-zuul
 │  └─sp12-config
 ├─RabbitMQ
-│  └─rabbitmq
+│  ├─rabbitmq
 │  │  ├─m1_simple (简单模式)
 │  │  ├─m2_work (工作模式)
 │  │  ├─m3_publishsubscribe (发布订阅模式)
 │  │  ├─m4_routing (路由模式)
 │  │  └─m5_topic (主题模式)
-
+│  └─rabbitmq-springboot (RabbitMQ - SpringBoot 整合)
 ```
 
 ![20200330135542918.png](./img/20200330135542918.png)
@@ -98,6 +99,7 @@
 
 ---
 ## 开发环境
+
 > - OS: **macOS 10.15.3 / CentOS 7**
 > - 语言: **JDK 1.8**
 > - IDE: **IDEA 2020.1**
@@ -106,6 +108,7 @@
 
 ---
 ## 联系
+
 - `网站 1(博客)：` [blog.yanbingxu.com](https://blog.yanbingxu.com/)
 - `网站 2(项目)：` [yanbingxu.com](http://yanbingxu.com/) (建设中)
 - `CSDN：` [me.csdn.net/qq_44153697](https://me.csdn.net/qq_44153697)
