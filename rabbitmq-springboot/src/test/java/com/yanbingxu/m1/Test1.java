@@ -20,7 +20,6 @@ public class Test1 {
     void test1() {
         p.send();
         System.out.println("----按回车结束----");
-        new Scanner(System.in).nextLine();
     }
 
 }

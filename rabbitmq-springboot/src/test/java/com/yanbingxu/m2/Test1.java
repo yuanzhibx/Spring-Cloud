@@ -19,7 +19,6 @@ public class Test1 {
     @Test
     public void test1() {
         p.send();
-        new Scanner(System.in).nextLine();
     }
 
 }
